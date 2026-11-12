@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b3d">
+  <meta name="description" content="SLF – ett enkelt studiestöd för snabbare lagföring. Välj väg steg för steg och få en checklista för förhandsgodkännande, tillgänglighetsdelgivning eller ordinarie handläggning.">
+  <title>SLF · Snabbare lagföring</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Hoppa till innehållet</a>
+  <aside class="sidebar">
+    <a class="brand" href="#guide" aria-label="SLF startsida"><span class="brand-mark" aria-hidden="true">S<span>↗</span></span><span><b>SLF<span class="brand-dot">.</span></b><small>SNABBARE LAGFÖRING</small></span></a>
+    <div class="nav-label">DITT STUDIESTÖD</div>
+    <nav aria-label="Huvudmeny">
+      <a href="#guide" data-nav="guide"><span data-icon="route"></span><span>Vägledning</span><span class="nav-chevron">›</span></a>
+      <a href="#overview" data-nav="overview"><span data-icon="grid"></span><span>Snabböversikt</span></a>
+      <a href="#faq" data-nav="faq"><span data-icon="help"></span><span>Frågor & svar</span></a>
+      <a href="#sources" data-nav="sources"><span data-icon="book"></span><span>Källor & fördjupning</span></a>
+    </nav>
+    <div class="sidebar-bottom"><div class="sidebar-note"><span data-icon="compass"></span><b>Stöd i varje vägval</b><p>Du gör bedömningen.<br>FU-ledaren fattar beslutet.</p></div><div class="version"><span class="status-dot"></span> Version 1.0 <span>12 nov 2026</span></div></div>
+  </aside>
+  <div class="main-shell">
+    <header class="topbar"><span id="page-label">Vägledning</span><div><span class="study-tag"><span class="status-dot"></span> För utbildning & repetition</span><button class="icon-button" id="install-button" aria-label="Lägg SLF på hemskärmen" title="Lägg på hemskärmen"><span data-icon="phone"></span></button></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="footer"><span>Fristående studiestöd · Ingen myndighetsapp</span><span>Följ aktuella lokala rutiner och FU-ledarens direktiv.</span></footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="install-dialog"><form method="dialog"><button class="icon-button dialog-close" aria-label="Stäng">×</button></form><span class="eyebrow">SLF I MOBILEN</span><h2>Alltid nära till hands.</h2><p><b>iPhone:</b> Öppna i Safari, tryck på Dela och välj Lägg till på hemskärmen.</p><p><b>Android:</b> Öppna webbläsarens meny och välj Installera app eller Lägg till på startskärmen.</p><p class="muted">Appen kan användas offline efter ett första besök. Källänkar behöver internet. Kontrollera alltid datumet för källgranskningen.</p><button class="button primary" id="native-install" hidden>Installera SLF</button></dialog>
+  <noscript><p class="noscript">Aktivera JavaScript för att använda vägledningen. <a href="https://polisen.se/om-polisen/polisens-arbete/snabbare-lagforing/">Läs om snabbare lagföring hos Polisen.</a></p></noscript>
+</body>
+</html>
