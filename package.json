@@ -1,0 +1,9 @@
+{
+  "name": "slf",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Steg för steg genom snabbare lagföring",
+  "scripts": { "start": "node serve.mjs", "test": "node --test", "check": "node --check app.js && node --check data.js && node --check sw.js" },
+  "engines": { "node": ">=20" }
+}
